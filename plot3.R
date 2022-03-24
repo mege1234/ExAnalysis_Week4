@@ -15,5 +15,5 @@ NEIEmissions <- NEIsub %>%
 head(NEIEmissions)
 #create plot
 png(filename = "./plot3.png", width =480, height = 480)
-ggplot(NEIEmissions, aes(year, Emissions, color = type)) + geom_point()
+ggplot(NEIEmissions, aes(year, Emissions, color = type)) + geom_line()
 dev.off()
